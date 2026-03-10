@@ -4742,9 +4742,18 @@ a:hover { color: var(--secondary) !important; border-bottom-color: transparent; 
 #footer a { color: var(--primary); }
 #footer a:hover { color: var(--secondary) !important; }
 
-/* Certification items */
-.cert-item { border-left: 4px solid var(--primary); }
-.cert-item header { border-bottom-color: var(--primary); }
+/* Add space between green bar and text */
+.cert-item {
+    border-left: 4px solid var(--primary);
+    padding-left: 20px;  /* ← THIS CREATES SPACE */
+    margin-bottom: 20px;
+}
+
+.cert-item header {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 15px;  /* ← SPACE BETWEEN BORDER AND HEADER TEXT */
+    margin-bottom: 15px;    /* ← SPACE BETWEEN HEADER AND DESCRIPTION */
+}
 
 /* Responsive */
 @media screen and (max-width: 736px) {

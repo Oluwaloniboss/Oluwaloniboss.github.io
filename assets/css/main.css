@@ -4744,7 +4744,8 @@ a:hover { color: var(--secondary) !important; border-bottom-color: transparent; 
 
 /* Add space between green bar and text */
 .cert-item {
-    border-left: 4px solid var(--primary);
+   
+	/* border-left: 4px solid var(--primary); */
     padding-left: 20px;  /* ← THIS CREATES SPACE */
     margin-bottom: 20px;
 }
